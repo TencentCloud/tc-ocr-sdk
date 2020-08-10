@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <declare-styleable name="RoundCornerButton">
+        <attr name="rcb_backgroundColor" format="color" />
+        <attr name="rcb_backgroundColorDisabled" format="color" />
+        <attr name="rcb_cornerRadius" format="dimension" />
+    </declare-styleable>
+</resources>

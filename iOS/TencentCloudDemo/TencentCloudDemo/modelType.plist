@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<array>
+	<dict>
+		<key>iconName</key>
+		<string>AutoModelIcon.svg</string>
+		<key>title</key>
+		<string>自动识别模式</string>
+		<key>desc</key>
+		<string>无需点击拍照，系统捕捉到证件自动识别</string>
+	</dict>
+	<dict>
+		<key>desc</key>
+		<string>点击拍照后，系统再进行识别</string>
+		<key>title</key>
+		<string>拍照识别模式</string>
+		<key>iconName</key>
+		<string>ManualModelIcon.svg</string>
+	</dict>
+</array>
+</plist>

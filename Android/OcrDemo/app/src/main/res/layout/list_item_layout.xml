@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_gravity="center"
+    android:orientation="horizontal">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="姓名"
+        android:textSize="18sp"
+        android:textAlignment="center"
+        android:layout_gravity="center"
+        android:layout_margin="5dp"
+        android:layout_weight="0.3" />
+
+    <EditText
+        android:id="@+id/value_et"
+        android:layout_width="0dp"
+        android:text="李明"
+        android:background="@null"
+        android:textSize="18sp"
+        android:layout_margin="5dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.78" />
+
+</LinearLayout>

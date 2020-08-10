@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ViewController">
+            <connections>
+                <outlet property="mainTableView" destination="H9c-nh-Inq" id="ciO-b6-cRt"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iiX-PU-0PI"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="wGm-uc-smZ">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
+                    <color key="backgroundColor" red="0.019607843137254902" green="0.41568627450980389" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="236" id="yEP-ee-hzf"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="H9c-nh-Inq">
+                    <rect key="frame" x="0.0" y="153" width="414" height="743"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="LCH-rY-0bi"/>
+                        <outlet property="delegate" destination="-1" id="9zO-Bd-6Mk"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="H9c-nh-Inq" secondAttribute="bottom" id="Efb-mr-EBf"/>
+                <constraint firstItem="wGm-uc-smZ" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="KI5-JF-hov"/>
+                <constraint firstAttribute="trailing" secondItem="wGm-uc-smZ" secondAttribute="trailing" id="KSG-SL-Ysr"/>
+                <constraint firstItem="H9c-nh-Inq" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="153" id="RUi-Rt-nXA"/>
+                <constraint firstItem="H9c-nh-Inq" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="fBq-rB-nEY"/>
+                <constraint firstAttribute="trailing" secondItem="H9c-nh-Inq" secondAttribute="trailing" id="fFV-y3-hXR"/>
+                <constraint firstItem="wGm-uc-smZ" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="hYy-mo-MFM"/>
+            </constraints>
+            <point key="canvasLocation" x="155.07246376811597" y="166.74107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main_bg" width="750" height="390"/>
+    </resources>
+</document>

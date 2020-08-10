@@ -1,0 +1,6 @@
+framework module OcrSDKKit {
+  umbrella header "OcrSDKKit.h"
+
+  export *
+  module * { export * }
+}

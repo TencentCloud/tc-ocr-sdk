@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="118px" height="78px" viewBox="0 0 118 78" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Group 8 Copy 2</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="0%" y1="50%" x2="100%" y2="50%" id="linearGradient-1">
+            <stop stop-color="#F9FBFE" offset="0%"></stop>
+            <stop stop-color="#F7EFF9" offset="45.7502694%"></stop>
+            <stop stop-color="#E7F4FD" offset="100%"></stop>
+        </linearGradient>
+        <rect id="path-2" x="0" y="0" width="116" height="76" rx="3"></rect>
+        <linearGradient x1="50%" y1="166.304409%" x2="50%" y2="46.2186789%" id="linearGradient-4">
+            <stop stop-color="#FFE8E4" offset="0%"></stop>
+            <stop stop-color="#FFBDB4" offset="100%"></stop>
+        </linearGradient>
+        <path d="M23.7524297,8.9826033 C27.3489956,9.8839019 31.2537413,11.5884906 35.4666667,14.0963695 L0.0835400414,14.0963695 C4.60945755,11.624075 8.65769309,9.93243653 12.2282467,9.02145412 L12.2282467,0 L23.7524297,0 L23.7524297,8.9826033 Z" id="path-5"></path>
+        <linearGradient x1="50%" y1="63.2929524%" x2="50%" y2="100%" id="linearGradient-7">
+            <stop stop-color="#FBB4AE" offset="0%"></stop>
+            <stop stop-color="#F49EA1" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="0%" y1="50%" x2="112.369973%" y2="31.7066913%" id="linearGradient-8">
+            <stop stop-color="#FFBFB6" offset="0%"></stop>
+            <stop stop-color="#FFABB2" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="166.304409%" x2="50%" y2="46.2186789%" id="linearGradient-9">
+            <stop stop-color="#FFEFEC" offset="0%"></stop>
+            <stop stop-color="#FFC6BE" offset="100%"></stop>
+        </linearGradient>
+        <linearGradient x1="50%" y1="0%" x2="50%" y2="55.5555299%" id="linearGradient-10">
+            <stop stop-color="#2C3037" offset="0%"></stop>
+            <stop stop-color="#27272A" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-8-Copy-2" transform="translate(1.000000, 1.000000)">
+            <g id="Group-8-Copy">
+                <g id="Combined-Shape_looper">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <rect stroke="#ADC9DB" x="-0.5" y="-0.5" width="117" height="77" rx="3"></rect>
+                    <g id="Oval_looper" opacity="0.133300781" mask="url(#mask-3)" stroke="#4BB2F7" stroke-width="0.3">
+                        <g transform="translate(81.905273, 35.953846) rotate(320.000000) translate(-81.905273, -35.953846) translate(1.905273, -62.636719)">
+                            <ellipse id="Oval_100" transform="translate(80.000000, 98.590565) rotate(356.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="18.5905649" ry="97.6122321"></ellipse>
+                            <ellipse id="Oval_99" transform="translate(80.000000, 98.590565) rotate(352.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="18.4041934" ry="96.6337825"></ellipse>
+                            <ellipse id="Oval_98" transform="translate(80.000000, 98.590565) rotate(349.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="18.2178218" ry="95.655333"></ellipse>
+                            <ellipse id="Oval_97" transform="translate(80.000000, 98.590565) rotate(345.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="18.0314502" ry="94.6768834"></ellipse>
+                            <ellipse id="Oval_96" transform="translate(80.000000, 98.590565) rotate(342.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="17.8450786" ry="93.6984339"></ellipse>
+                            <ellipse id="Oval_95" transform="translate(80.000000, 98.590565) rotate(338.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="17.658707" ry="92.7199845"></ellipse>
+                            <ellipse id="Oval_94" transform="translate(80.000000, 98.590565) rotate(334.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="17.4723355" ry="91.741535"></ellipse>
+                            <ellipse id="Oval_93" transform="translate(80.000000, 98.590565) rotate(331.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="17.2859639" ry="90.7630856"></ellipse>
+                            <ellipse id="Oval_92" transform="translate(80.000000, 98.590565) rotate(327.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="17.0995923" ry="89.7846362"></ellipse>
+                            <ellipse id="Oval_91" transform="translate(80.000000, 98.590565) rotate(324.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="16.9132207" ry="88.8061869"></ellipse>
+                            <ellipse id="Oval_90" transform="translate(80.000000, 98.590565) rotate(320.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="16.7268492" ry="87.8277375"></ellipse>
+                            <ellipse id="Oval_89" transform="translate(80.000000, 98.590565) rotate(316.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="16.5404776" ry="86.8492882"></ellipse>
+                            <ellipse id="Oval_88" transform="translate(80.000000, 98.590565) rotate(313.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="16.354106" ry="85.870839"></ellipse>
+                            <ellipse id="Oval_87" transform="translate(80.000000, 98.590565) rotate(309.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="16.1677344" ry="84.8923898"></ellipse>
+                            <ellipse id="Oval_86" transform="translate(80.000000, 98.590565) rotate(306.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="15.9813628" ry="83.9139406"></ellipse>
+                            <ellipse id="Oval_85" transform="translate(80.000000, 98.590565) rotate(302.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="15.7949913" ry="82.9354914"></ellipse>
+                            <ellipse id="Oval_84" transform="translate(80.000000, 98.590565) rotate(298.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="15.6086197" ry="81.9570423"></ellipse>
+                            <ellipse id="Oval_83" transform="translate(80.000000, 98.590565) rotate(295.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="15.4222481" ry="80.9785933"></ellipse>
+                            <ellipse id="Oval_82" transform="translate(80.000000, 98.590565) rotate(291.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="15.2358765" ry="80.0001443"></ellipse>
+                            <ellipse id="Oval_81" transform="translate(80.000000, 98.590565) rotate(288.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="15.049505" ry="79.0216953"></ellipse>
+                            <ellipse id="Oval_80" transform="translate(80.000000, 98.590565) rotate(284.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="14.8631334" ry="78.0432463"></ellipse>
+                            <ellipse id="Oval_79" transform="translate(80.000000, 98.590565) rotate(280.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="14.6767618" ry="77.0647975"></ellipse>
+                            <ellipse id="Oval_78" transform="translate(80.000000, 98.590565) rotate(277.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="14.4903902" ry="76.0863486"></ellipse>
+                            <ellipse id="Oval_77" transform="translate(80.000000, 98.590565) rotate(273.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="14.3040186" ry="75.1078998"></ellipse>
+                            <ellipse id="Oval_76" transform="translate(80.000000, 98.590565) rotate(270.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="14.1176471" ry="74.1294511"></ellipse>
+                            <ellipse id="Oval_75" transform="translate(80.000000, 98.590565) rotate(266.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="13.9312755" ry="73.1510024"></ellipse>
+                            <ellipse id="Oval_74" transform="translate(80.000000, 98.590565) rotate(262.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="13.7449039" ry="72.1725538"></ellipse>
+                            <ellipse id="Oval_73" transform="translate(80.000000, 98.590565) rotate(259.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="13.5585323" ry="71.1941053"></ellipse>
+                            <ellipse id="Oval_72" transform="translate(80.000000, 98.590565) rotate(255.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="13.3721607" ry="70.2156568"></ellipse>
+                            <ellipse id="Oval_71" transform="translate(80.000000, 98.590565) rotate(252.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="13.1857892" ry="69.2372084"></ellipse>
+                            <ellipse id="Oval_70" transform="translate(80.000000, 98.590565) rotate(248.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="12.9994176" ry="68.25876"></ellipse>
+                            <ellipse id="Oval_69" transform="translate(80.000000, 98.590565) rotate(244.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="12.813046" ry="67.2803117"></ellipse>
+                            <ellipse id="Oval_68" transform="translate(80.000000, 98.590565) rotate(241.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="12.6266744" ry="66.3018635"></ellipse>
+                            <ellipse id="Oval_67" transform="translate(80.000000, 98.590565) rotate(237.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="12.4403029" ry="65.3234154"></ellipse>
+                            <ellipse id="Oval_66" transform="translate(80.000000, 98.590565) rotate(234.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="12.2539313" ry="64.3449673"></ellipse>
+                            <ellipse id="Oval_65" transform="translate(80.000000, 98.590565) rotate(230.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="12.0675597" ry="63.3665194"></ellipse>
+                            <ellipse id="Oval_64" transform="translate(80.000000, 98.590565) rotate(226.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="11.8811881" ry="62.3880715"></ellipse>
+                            <ellipse id="Oval_63" transform="translate(80.000000, 98.590565) rotate(223.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="11.6948165" ry="61.4096237"></ellipse>
+                            <ellipse id="Oval_62" transform="translate(80.000000, 98.590565) rotate(219.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="11.508445" ry="60.431176"></ellipse>
+                            <ellipse id="Oval_61" transform="translate(80.000000, 98.590565) rotate(216.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="11.3220734" ry="59.4527284"></ellipse>
+                            <ellipse id="Oval_60" transform="translate(80.000000, 98.590565) rotate(212.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="11.1357018" ry="58.474281"></ellipse>
+                            <ellipse id="Oval_59" transform="translate(80.000000, 98.590565) rotate(208.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="10.9493302" ry="57.4958336"></ellipse>
+                            <ellipse id="Oval_58" transform="translate(80.000000, 98.590565) rotate(205.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="10.7629586" ry="56.5173864"></ellipse>
+                            <ellipse id="Oval_57" transform="translate(80.000000, 98.590565) rotate(201.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="10.5765871" ry="55.5389393"></ellipse>
+                            <ellipse id="Oval_56" transform="translate(80.000000, 98.590565) rotate(198.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="10.3902155" ry="54.5604923"></ellipse>
+                            <ellipse id="Oval_55" transform="translate(80.000000, 98.590565) rotate(194.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="10.2038439" ry="53.5820455"></ellipse>
+                            <ellipse id="Oval_54" transform="translate(80.000000, 98.590565) rotate(190.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="10.0174723" ry="52.6035988"></ellipse>
+                            <ellipse id="Oval_53" transform="translate(80.000000, 98.590565) rotate(187.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="9.83110076" ry="51.6251523"></ellipse>
+                            <ellipse id="Oval_52" transform="translate(80.000000, 98.590565) rotate(183.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="9.64472918" ry="50.6467059"></ellipse>
+                            <ellipse id="Oval_51" transform="translate(80.000000, 98.590565) rotate(180.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="9.4583576" ry="49.6682598"></ellipse>
+                            <ellipse id="Oval_50" transform="translate(80.000000, 98.590565) rotate(176.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="9.27198602" ry="48.6898138"></ellipse>
+                            <ellipse id="Oval_49" transform="translate(80.000000, 98.590565) rotate(172.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="9.08561444" ry="47.711368"></ellipse>
+                            <ellipse id="Oval_48" transform="translate(80.000000, 98.590565) rotate(169.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="8.89924287" ry="46.7329224"></ellipse>
+                            <ellipse id="Oval_47" transform="translate(80.000000, 98.590565) rotate(165.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="8.71287129" ry="45.7544771"></ellipse>
+                            <ellipse id="Oval_46" transform="translate(80.000000, 98.590565) rotate(162.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="8.52649971" ry="44.776032"></ellipse>
+                            <ellipse id="Oval_45" transform="translate(80.000000, 98.590565) rotate(158.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="8.34012813" ry="43.7975872"></ellipse>
+                            <ellipse id="Oval_44" transform="translate(80.000000, 98.590565) rotate(154.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="8.15375655" ry="42.8191426"></ellipse>
+                            <ellipse id="Oval_43" transform="translate(80.000000, 98.590565) rotate(151.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="7.96738497" ry="41.8406983"></ellipse>
+                            <ellipse id="Oval_42" transform="translate(80.000000, 98.590565) rotate(147.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="7.7810134" ry="40.8622544"></ellipse>
+                            <ellipse id="Oval_41" transform="translate(80.000000, 98.590565) rotate(144.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="7.59464182" ry="39.8838108"></ellipse>
+                            <ellipse id="Oval_40" transform="translate(80.000000, 98.590565) rotate(140.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="7.40827024" ry="38.9053676"></ellipse>
+                            <ellipse id="Oval_39" transform="translate(80.000000, 98.590565) rotate(136.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="7.22189866" ry="37.9269248"></ellipse>
+                            <ellipse id="Oval_38" transform="translate(80.000000, 98.590565) rotate(133.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="7.03552708" ry="36.9484824"></ellipse>
+                            <ellipse id="Oval_37" transform="translate(80.000000, 98.590565) rotate(129.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="6.8491555" ry="35.9700404"></ellipse>
+                            <ellipse id="Oval_36" transform="translate(80.000000, 98.590565) rotate(126.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="6.66278393" ry="34.991599"></ellipse>
+                            <ellipse id="Oval_35" transform="translate(80.000000, 98.590565) rotate(122.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="6.47641235" ry="34.0131582"></ellipse>
+                            <ellipse id="Oval_34" transform="translate(80.000000, 98.590565) rotate(118.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="6.29004077" ry="33.0347179"></ellipse>
+                            <ellipse id="Oval_33" transform="translate(80.000000, 98.590565) rotate(115.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="6.10366919" ry="32.0562783"></ellipse>
+                            <ellipse id="Oval_32" transform="translate(80.000000, 98.590565) rotate(111.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="5.91729761" ry="31.0778395"></ellipse>
+                            <ellipse id="Oval_31" transform="translate(80.000000, 98.590565) rotate(108.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="5.73092603" ry="30.0994014"></ellipse>
+                            <ellipse id="Oval_30" transform="translate(80.000000, 98.590565) rotate(104.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="5.54455446" ry="29.1209643"></ellipse>
+                            <ellipse id="Oval_29" transform="translate(80.000000, 98.590565) rotate(100.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="5.35818288" ry="28.1425281"></ellipse>
+                            <ellipse id="Oval_28" transform="translate(80.000000, 98.590565) rotate(97.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="5.1718113" ry="27.164093"></ellipse>
+                            <ellipse id="Oval_27" transform="translate(80.000000, 98.590565) rotate(93.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="4.98543972" ry="26.1856591"></ellipse>
+                            <ellipse id="Oval_26" transform="translate(80.000000, 98.590565) rotate(90.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="4.79906814" ry="25.2072266"></ellipse>
+                            <ellipse id="Oval_25" transform="translate(80.000000, 98.590565) rotate(86.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="4.61269656" ry="24.2287956"></ellipse>
+                            <ellipse id="Oval_24" transform="translate(80.000000, 98.590565) rotate(82.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="4.42632499" ry="23.2503664"></ellipse>
+                            <ellipse id="Oval_23" transform="translate(80.000000, 98.590565) rotate(79.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="4.23995341" ry="22.2719392"></ellipse>
+                            <ellipse id="Oval_22" transform="translate(80.000000, 98.590565) rotate(75.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="4.05358183" ry="21.2935142"></ellipse>
+                            <ellipse id="Oval_21" transform="translate(80.000000, 98.590565) rotate(72.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="3.86721025" ry="20.3150918"></ellipse>
+                            <ellipse id="Oval_20" transform="translate(80.000000, 98.590565) rotate(68.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="3.68083867" ry="19.3366725"></ellipse>
+                            <ellipse id="Oval_19" transform="translate(80.000000, 98.590565) rotate(64.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="3.49446709" ry="18.3582567"></ellipse>
+                            <ellipse id="Oval_18" transform="translate(80.000000, 98.590565) rotate(61.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="3.30809552" ry="17.3798451"></ellipse>
+                            <ellipse id="Oval_17" transform="translate(80.000000, 98.590565) rotate(57.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="3.12172394" ry="16.4014385"></ellipse>
+                            <ellipse id="Oval_16" transform="translate(80.000000, 98.590565) rotate(54.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="2.93535236" ry="15.4230378"></ellipse>
+                            <ellipse id="Oval_15" transform="translate(80.000000, 98.590565) rotate(50.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="2.74898078" ry="14.4446445"></ellipse>
+                            <ellipse id="Oval_14" transform="translate(80.000000, 98.590565) rotate(46.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="2.5626092" ry="13.4662601"></ellipse>
+                            <ellipse id="Oval_13" transform="translate(80.000000, 98.590565) rotate(43.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="2.37623762" ry="12.4878871"></ellipse>
+                            <ellipse id="Oval_12" transform="translate(80.000000, 98.590565) rotate(39.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="2.18986605" ry="11.5095285"></ellipse>
+                            <ellipse id="Oval_11" transform="translate(80.000000, 98.590565) rotate(36.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="2.00349447" ry="10.5311889"></ellipse>
+                            <ellipse id="Oval_10" transform="translate(80.000000, 98.590565) rotate(32.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1.81712289" ry="9.55287462"></ellipse>
+                            <ellipse id="Oval_9" transform="translate(80.000000, 98.590565) rotate(28.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1.63075131" ry="8.5745956"></ellipse>
+                            <ellipse id="Oval_8" transform="translate(80.000000, 98.590565) rotate(25.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1.44437973" ry="7.59636748"></ellipse>
+                            <ellipse id="Oval_7" transform="translate(80.000000, 98.590565) rotate(21.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1.25800815" ry="6.61821681"></ellipse>
+                            <ellipse id="Oval_6" transform="translate(80.000000, 98.590565) rotate(18.000000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1.07163658" ry="5.6401925"></ellipse>
+                            <ellipse id="Oval_5" transform="translate(80.000000, 98.590565) rotate(14.400000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1" ry="4.66239565"></ellipse>
+                            <ellipse id="Oval_4" transform="translate(80.000000, 98.590565) rotate(10.800000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1" ry="3.68507439"></ellipse>
+                            <ellipse id="Oval_3" transform="translate(80.000000, 98.590565) rotate(7.200000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1" ry="2.70904401"></ellipse>
+                            <ellipse id="Oval_2" transform="translate(80.000000, 98.590565) rotate(3.600000) translate(-80.000000, -98.590565) " cx="80" cy="98.5905649" rx="1" ry="1.73946806"></ellipse>
+                            <ellipse id="Oval_1" cx="80" cy="98.5905649" rx="1" ry="1"></ellipse>
+                        </g>
+                    </g>
+                </g>
+                <g id="Group-7" transform="translate(67.000000, 10.000000)">
+                    <g id="Group-6" transform="translate(1.930354, 0.000000)">
+                        <g id="Oval-Copy-42" transform="translate(18.466667, 31.658454) scale(-1, 1) translate(-18.466667, -31.658454) translate(0.466667, 24.158454)">
+                            <mask id="mask-6" fill="white">
+                                <use xlink:href="#path-5"></use>
+                            </mask>
+                            <use id="Mask" fill="url(#linearGradient-4)" xlink:href="#path-5"></use>
+                            <ellipse id="Oval" fill="url(#linearGradient-7)" mask="url(#mask-6)" cx="17.9903382" cy="-4.9780215" rx="6.55686275" ry="11.349889"></ellipse>
+                        </g>
+                        <path d="M10.7379004,20.8606026 C12.1665024,20.5699033 12.8222222,19.6888211 12.8222222,18.6339074 C12.8222222,17.5789938 11.8890396,16.4483092 10.7379004,16.4483092 C9.58676124,16.4483092 8.72550521,17.2204752 8.05099447,18.6339074 C7.87263551,19.0076573 7.57834267,19.811932 7.16811594,21.0467316 C8.59557088,21.1164451 9.78549903,21.0544021 10.7379004,20.8606026 Z" id="Oval-Copy-43" fill="url(#linearGradient-8)" transform="translate(9.995169, 18.761353) scale(-1, 1) translate(-9.995169, -18.761353) "></path>
+                        <path d="M27.7002192,20.8606026 C29.1288213,20.5699033 29.7845411,19.6888211 29.7845411,18.6339074 C29.7845411,17.5789938 28.8513584,16.4483092 27.7002192,16.4483092 C26.5490801,16.4483092 25.687824,17.2204752 25.0133133,18.6339074 C24.8349544,19.0076573 24.5406615,19.811932 24.1304348,21.0467316 C25.5578897,21.1164451 26.7478179,21.0544021 27.7002192,20.8606026 Z" id="Oval-Copy-44" fill="url(#linearGradient-8)"></path>
+                        <path d="M18.4806427,27.7565217 C24.0414303,27.7565217 25.9768081,22.7699012 26.8066733,16.3938388 C27.1841915,13.4932716 27.6972435,8.82487935 26.264614,6.71235319 C24.7490531,4.47753797 20.8444874,4.63246515 18.4806427,4.63246515 C16.0714891,4.63246515 12.2011089,4.40196093 10.6807968,6.71235319 C9.29929666,8.8117954 9.72540089,13.1648796 10.1546121,16.3938388 C11.0043852,22.7866881 12.9198551,27.7565217 18.4806427,27.7565217 Z" id="Oval-Copy-45" fill="url(#linearGradient-9)" transform="translate(18.476329, 16.191304) scale(-1, 1) translate(-18.476329, -16.191304) "></path>
+                        <path d="M13.0220582,6.87146346 C14.0392821,8.53858788 15.6891461,9.49107312 17.9716502,9.72891919 C21.3954063,10.0856883 22.7211813,9.21740229 24.4986952,10.8839482 C25.6837045,11.9949788 26.4761062,13.8497658 26.8759003,16.4483092 C27.8979866,14.1704828 28.5108517,11.9306862 28.7144954,9.72891919 C29.0199609,6.42626873 27.7478618,2.15713782 21.9953572,0.489319877 C18.1603541,-0.622558751 15.2494595,0.160448985 13.2626733,2.83834309 C11.8783743,2.78786214 10.8693233,3.06482974 10.2355206,3.66924588 C9.28481643,4.57587009 8.42764188,5.80665386 8.21576412,8.36232446 C8.07451228,10.0661049 8.6956106,12.7188388 10.0790591,16.3205263 C10.3892503,13.0717095 10.820963,10.9133221 11.3741971,9.84536429 C11.9274313,8.77740645 12.4767183,7.78610617 13.0220582,6.87146346 Z" id="Path-12-Copy-2" fill="url(#linearGradient-10)" transform="translate(18.476329, 8.224155) scale(-1, 1) translate(-18.476329, -8.224155) "></path>
+                        <path d="M17.2784666,17.5018847 C17.069607,19.1771484 17.1293384,20.1188145 17.4576608,20.326883 C17.7859831,20.5349516 18.2337122,20.5349581 18.800848,20.3269024" id="Path-Copy-5" stroke="#F0988C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(17.978753, 18.992412) scale(-1, 1) rotate(3.000000) translate(-17.978753, -18.992412) "></path>
+                        <path d="M15.3922705,22.0077295 C15.3922705,22.2916092 16.6579853,22.5217391 18.2193237,22.5217391 C19.780662,22.5217391 21.0463768,22.2916092 21.0463768,22.0077295" id="Path-Copy-7" stroke="#F0988C" stroke-width="0.6" stroke-linecap="round" stroke-linejoin="round" transform="translate(18.219324, 22.264734) scale(-1, 1) translate(-18.219324, -22.264734) "></path>
+                    </g>
+                    <path d="M26.5073032,32.6668251 C32.9038277,32.7900604 38.6537553,36.6391458 41.197021,42.5307878 L3.51718654e-13,42.5307878 C2.50983274,36.8142579 8.01622854,33.0284733 14.1990036,32.6887198 C15.1076921,33.9750415 17.5166375,34.8944241 20.3455059,34.8944241 C23.1903986,34.8944241 25.6105976,33.9645962 26.5073056,32.6668251 Z" id="Combined-Shape" fill="#9CA6CA"></path>
+                </g>
+                <rect id="Rectangle" fill="#8CCCFE" x="9" y="10" width="14" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-2" fill="#8CCCFE" x="9" y="22" width="14" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-4" fill="#8CCCFE" x="9" y="34" width="14" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-6" fill="#8CCCFE" x="9" y="48" width="14" height="2" rx="1"></rect>
+                <rect id="Rectangle-Copy-8" fill="#8CCCFE" x="9" y="62" width="14" height="2" rx="1"></rect>
+                <path d="M29,10 L46.9670405,10 C47.5193252,10 47.9670405,10.4477153 47.9670405,11 C47.9670405,11.5522847 47.5193252,12 46.9670405,12 L29,12 C28.4477153,12 28,11.5522847 28,11 C28,10.4477153 28.4477153,10 29,10 Z" id="Rectangle-Copy" fill="#999999" opacity="0.461704799"></path>
+                <path d="M29,22 L46.9670405,22 C47.5193252,22 47.9670405,22.4477153 47.9670405,23 C47.9670405,23.5522847 47.5193252,24 46.9670405,24 L29,24 C28.4477153,24 28,23.5522847 28,23 C28,22.4477153 28.4477153,22 29,22 Z" id="Rectangle-Copy-3" fill="#999999" opacity="0.461704799"></path>
+                <path d="M29,34 L56.9670405,34 C57.5193252,34 57.9670405,34.4477153 57.9670405,35 C57.9670405,35.5522847 57.5193252,36 56.9670405,36 L29,36 C28.4477153,36 28,35.5522847 28,35 C28,34.4477153 28.4477153,34 29,34 Z" id="Rectangle-Copy-5" fill="#999999" opacity="0.461704799"></path>
+                <path d="M29,48 L56.9670405,48 C57.5193252,48 57.9670405,48.4477153 57.9670405,49 C57.9670405,49.5522847 57.5193252,50 56.9670405,50 L29,50 C28.4477153,50 28,49.5522847 28,49 C28,48.4477153 28.4477153,48 29,48 Z" id="Rectangle-Copy-7" fill="#999999" opacity="0.461704799"></path>
+                <rect id="Rectangle-Copy-9" fill="#999999" opacity="0.461704799" x="28" y="62" width="79.9670405" height="2" rx="1"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

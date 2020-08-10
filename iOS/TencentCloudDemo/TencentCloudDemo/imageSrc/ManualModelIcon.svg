@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="80px" height="80px" viewBox="0 0 80 80" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 56.3 (81716) - https://sketch.com -->
+    <title>Group 6 Copy</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group-6-Copy">
+            <circle id="Oval" fill="#006EFF" cx="40" cy="40" r="40"></circle>
+            <g id="Group-4" transform="translate(21.000000, 22.000000)" stroke="#FFFFFF">
+                <path d="M41.3185427,4.57350128 L30.5761355,4.57350128 C30.0693946,4.57350128 29.5815458,4.38114549 29.2111684,4.03530321 L25.4659681,0.538198067 C25.0955907,0.192355782 24.6077419,5.23598373e-15 24.101001,0 L16.0806145,0 C15.5107243,-5.61446687e-16 14.9678994,0.243116447 14.5884393,0.668304461 L11.6996666,3.90519681 C11.3202065,4.33038483 10.7773815,4.57350128 10.2074913,4.57350128 L2,4.57350128 C0.8954305,4.57350128 -1.60007386e-13,5.46893178 -1.59872116e-13,6.57350128 L-1.59872116e-13,34.2427241" id="Path-15" stroke-width="3"></path>
+                <path d="M6.50884885,32.7419483 L32.704839,32.7419483 C36.5708322,32.7419483 39.704839,29.6079416 39.704839,25.7419483 L39.704839,11.5601084" id="Path-16" stroke-width="3"></path>
+                <circle id="Oval" stroke-width="3.4" cx="20.0713489" cy="17.7367666" r="7.75510204"></circle>
+            </g>
+        </g>
+    </g>
+</svg>

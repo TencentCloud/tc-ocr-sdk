@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+这个动画作用在打开活动时需要进入的activity上
+所以对它执行位移动画，
+所有activity默认都是在屏幕中的，所以坐标原点就是屏幕左上角
+即（0，0）位置对应屏幕左上角
+让他的左上角坐标从相对于父元素100%的位置，即1位置
+移动到0位置，即主界面
+-->
+<translate xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:duration="200"
+    android:fromXDelta="100%p"
+    android:toXDelta="0"
+    android:fromYDelta="0"
+    android:toYDelta="0"
+    tools:ignore="MissingDefaultResource" />

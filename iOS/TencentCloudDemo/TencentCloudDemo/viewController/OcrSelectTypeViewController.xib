@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="OcrSelectTypeViewController">
+            <connections>
+                <outlet property="selectTableView" destination="rsz-Ix-sLp" id="Unb-FD-YPR"/>
+                <outlet property="view" destination="qg9-mY-mwI" id="oyC-FN-fqN"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="qg9-mY-mwI">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="bZg-gn-kEE">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
+                    <color key="backgroundColor" red="0.18039215689999999" green="0.42352941179999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="236" id="xua-Ac-Eq5"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rsz-Ix-sLp">
+                    <rect key="frame" x="0.0" y="153" width="414" height="743"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="rsz-Ix-sLp" secondAttribute="bottom" id="6Fq-Qj-ZPz"/>
+                <constraint firstItem="rsz-Ix-sLp" firstAttribute="top" secondItem="qg9-mY-mwI" secondAttribute="top" constant="153" id="Del-NX-ddZ"/>
+                <constraint firstAttribute="trailing" secondItem="bZg-gn-kEE" secondAttribute="trailing" id="Jcf-57-RZd"/>
+                <constraint firstItem="bZg-gn-kEE" firstAttribute="leading" secondItem="qg9-mY-mwI" secondAttribute="leading" id="XOG-QB-15l"/>
+                <constraint firstItem="bZg-gn-kEE" firstAttribute="top" secondItem="qg9-mY-mwI" secondAttribute="top" id="g6u-jF-l0l"/>
+                <constraint firstItem="rsz-Ix-sLp" firstAttribute="leading" secondItem="qg9-mY-mwI" secondAttribute="leading" id="oOn-SR-yP1"/>
+                <constraint firstAttribute="trailing" secondItem="rsz-Ix-sLp" secondAttribute="trailing" id="vUJ-6V-nPK"/>
+            </constraints>
+            <point key="canvasLocation" x="155.07246376811597" y="166.74107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main_bg" width="750" height="390"/>
+    </resources>
+</document>

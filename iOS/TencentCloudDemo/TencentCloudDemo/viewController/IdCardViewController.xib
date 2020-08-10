@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="16097.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IdCardViewController">
+            <connections>
+                <outlet property="idCardTableView" destination="f6t-Xc-Yj7" id="eTO-nt-tvl"/>
+                <outlet property="resultOcrTipsLabel" destination="SpO-0o-xFF" id="Ybk-kb-LNL"/>
+                <outlet property="resultScollView" destination="FeA-f2-b43" id="gIc-z5-Dvq"/>
+                <outlet property="showContentView" destination="wGx-U7-Sdw" id="CPc-0h-Mnk"/>
+                <outlet property="tableViewBottomConstraints" destination="iwt-Vh-OD8" id="C78-Jg-S3x"/>
+                <outlet property="tableViewTopConstraints" destination="Kx4-5r-PGN" id="QRA-R3-i3V"/>
+                <outlet property="view" destination="zFZ-Fm-0Lz" id="vTP-dd-wPO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="zFZ-Fm-0Lz" customClass="UIControl">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="YF9-ps-4Jk">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="236"/>
+                    <color key="backgroundColor" red="0.18039215689999999" green="0.42352941179999998" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="236" id="RhS-Qj-oVD"/>
+                    </constraints>
+                </imageView>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="f6t-Xc-Yj7">
+                    <rect key="frame" x="0.0" y="150" width="414" height="326"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </tableView>
+                <label hidden="YES" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="请确认识别结果，若有误可手动修改" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SpO-0o-xFF">
+                    <rect key="frame" x="92.5" y="486" width="229" height="17"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FeA-f2-b43">
+                    <rect key="frame" x="0.0" y="511" width="414" height="385"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wGx-U7-Sdw" userLabel="contentView">
+                            <rect key="frame" x="0.0" y="0.0" width="414" height="600"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="600" id="Iti-hs-n3K"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="wGx-U7-Sdw" firstAttribute="bottom" secondItem="ZQ0-Xk-Zml" secondAttribute="bottom" id="JSW-YF-9qW"/>
+                        <constraint firstItem="wGx-U7-Sdw" firstAttribute="width" secondItem="DcX-AN-ShQ" secondAttribute="width" id="S4C-mZ-X7N"/>
+                        <constraint firstItem="wGx-U7-Sdw" firstAttribute="leading" secondItem="ZQ0-Xk-Zml" secondAttribute="leading" id="XJo-xf-UZV"/>
+                        <constraint firstItem="wGx-U7-Sdw" firstAttribute="trailing" secondItem="ZQ0-Xk-Zml" secondAttribute="trailing" id="XMJ-Qi-X4H"/>
+                        <constraint firstItem="wGx-U7-Sdw" firstAttribute="top" secondItem="ZQ0-Xk-Zml" secondAttribute="top" id="ZXQ-9e-tgL"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="ZQ0-Xk-Zml"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="DcX-AN-ShQ"/>
+                    <connections>
+                        <outlet property="delegate" destination="-1" id="hoP-n2-q1Y"/>
+                    </connections>
+                </scrollView>
+            </subviews>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <color key="tintColor" cocoaTouchSystemColor="darkTextColor"/>
+            <constraints>
+                <constraint firstItem="SpO-0o-xFF" firstAttribute="top" secondItem="f6t-Xc-Yj7" secondAttribute="bottom" constant="10" id="2sT-jr-UOd"/>
+                <constraint firstAttribute="trailing" secondItem="f6t-Xc-Yj7" secondAttribute="trailing" id="6Ys-EK-Mbv"/>
+                <constraint firstItem="YF9-ps-4Jk" firstAttribute="top" secondItem="zFZ-Fm-0Lz" secondAttribute="top" id="EgB-o9-UHp"/>
+                <constraint firstItem="f6t-Xc-Yj7" firstAttribute="leading" secondItem="zFZ-Fm-0Lz" secondAttribute="leading" id="GK6-gX-PrM"/>
+                <constraint firstAttribute="bottom" secondItem="FeA-f2-b43" secondAttribute="bottom" id="GZ4-LW-LL5"/>
+                <constraint firstItem="f6t-Xc-Yj7" firstAttribute="top" secondItem="zFZ-Fm-0Lz" secondAttribute="top" constant="150" id="Kx4-5r-PGN"/>
+                <constraint firstItem="SpO-0o-xFF" firstAttribute="centerX" secondItem="zFZ-Fm-0Lz" secondAttribute="centerX" id="TuK-7o-Ny3"/>
+                <constraint firstItem="FeA-f2-b43" firstAttribute="top" secondItem="f6t-Xc-Yj7" secondAttribute="bottom" constant="35" id="a12-8B-Sai"/>
+                <constraint firstItem="YF9-ps-4Jk" firstAttribute="leading" secondItem="zFZ-Fm-0Lz" secondAttribute="leading" id="cYc-pk-8sR"/>
+                <constraint firstAttribute="trailing" secondItem="YF9-ps-4Jk" secondAttribute="trailing" id="cqK-Gd-XOs"/>
+                <constraint firstAttribute="bottom" secondItem="f6t-Xc-Yj7" secondAttribute="bottom" constant="420" id="iwt-Vh-OD8"/>
+                <constraint firstItem="FeA-f2-b43" firstAttribute="leading" secondItem="zFZ-Fm-0Lz" secondAttribute="leading" id="jC6-gf-Es1"/>
+                <constraint firstAttribute="trailing" secondItem="FeA-f2-b43" secondAttribute="trailing" id="w3p-FT-TEV"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <action selector="touchView:" destination="-1" eventType="touchUpInside" id="YOL-Jq-DLK"/>
+            </connections>
+            <point key="canvasLocation" x="155.07246376811597" y="166.74107142857142"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="main_bg" width="750" height="390"/>
+    </resources>
+</document>
