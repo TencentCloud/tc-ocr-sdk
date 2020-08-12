@@ -1,3 +1,30 @@
- # 腾讯云通用文字识别终端组件 OCR SDK
+## SDK接入概览
 
-[通用文字识别SDK](https://cloud.tencent.com/product/generalocr): 基于腾讯云视觉AI团队提供的通用文字识别能力，结合平台特性实现的一套终端SDK组件，帮助您快速在移动端实现通用文字识别的能力。
+### SDK说明
+
+文字识别OCR客户端SDK给您提供了一种方便、快捷、灵活的方式，将腾讯云文字识别能力集成到您的客户端，以使用腾讯云快速、准确的文字识别服务。
+
+目前腾讯云文字识别客户端SDK支持的能力：
+
+- [**身份证识别**](https://cloud.tencent.com/document/product/866/33524)
+- [**银行卡识别**](https://cloud.tencent.com/document/product/866/36216)
+- [**名片识别**](https://cloud.tencent.com/document/product/866/36214)
+
+![图片](https://ai-sdk-release-1254418846.cos.ap-guangzhou.myqcloud.com/ocr/1.0.2/ocr_type.png)
+
+后续将逐步加入更多文字识别能力，敬请期待！
+
+### 快速体验
+
+目前腾讯云提供了Android端的文字识别体验App，[扫码下载](https://github.com/TencentCloud/tc-ocr-sdk/tree/master/快速体验.md)即可体验文字识别客户端SDK能力。
+
+
+### SDK接入
+
+文字识别客户端SDK目前支持Android、iOS双平台。
+
+| 所属平台 | sdk包                                                        | Github                                               | Demo运行说明                                                 | SDK集成指引                                                  |
+| -------- | ------------------------------------------------------------ | ---------------------------------------------------- | ------------------------------------------------------------ | ------------------------------------------------------------ |
+| iOS      | [下载地址](https://ai-sdk-release-1254418846.cos.ap-guangzhou.myqcloud.com/ocr/1.0.2/OCR_iOS_SDK_V1.0.2.zip) | [Github](https://github.com/TencentCloud/tc-ocr-sdk) | [一分钟跑通Demo](https://cloud.tencent.com/document/product/866/47302) | [iOS端集成文档](https://cloud.tencent.com/document/product/866/47304) |
+| Android  | [下载地址](https://ai-sdk-release-1254418846.cos.ap-guangzhou.myqcloud.com/ocr/1.0.2/OCR_Android_SDK_V1.0.2.zip) | [Github](https://github.com/TencentCloud/tc-ocr-sdk) | [一分钟跑通Demo](https://cloud.tencent.com/document/product/866/47303) | [Android端集成文档](https://cloud.tencent.com/document/product/866/47305) |
+
