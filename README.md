@@ -16,7 +16,7 @@
 
 ### 快速体验
 
-目前腾讯云提供了Android端的文字识别体验App，[扫码下载](https://github.com/TencentCloud/tc-ocr-sdk/tree/master/快速体验.md)即可体验文字识别客户端SDK能力。
+目前腾讯云提供了Android端的文字识别体验App，[扫码下载](https://github.com/TencentCloud/tc-ocr-sdk/blob/master/%E5%BF%AB%E9%80%9F%E4%BD%93%E9%AA%8C.md)即可体验文字识别客户端SDK能力。
 
 
 ### SDK接入
