@@ -1,0 +1,4 @@
+<view wx:if="{{ src }}" class="seal-icon ext-class" style="{{ styles }}">
+  <image src="{{ src }}" mode="aspectFit" style="{{ styles }}"></image>
+</view>
+<view wx:else class="seal-icon {{ 'seal-icon-' + name }} ext-class" style="{{ styles }}"></view>

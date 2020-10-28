@@ -1,0 +1,11 @@
+import CATEGORY_ENUM from './category';
+
+const ACTION_ENUM = {
+  [CATEGORY_ENUM.ID_CARD]: 'IDCardOCR',
+  [CATEGORY_ENUM.ID_CARD_FRONT]: 'IDCardOCR',
+  [CATEGORY_ENUM.ID_CARD_BACK]: 'IDCardOCR',
+  [CATEGORY_ENUM.BANK_CARD]: 'BankCardOCR',
+  [CATEGORY_ENUM.BUSINESS_CARD]: 'BusinessCardOCR',
+};
+
+module.exports = ACTION_ENUM;

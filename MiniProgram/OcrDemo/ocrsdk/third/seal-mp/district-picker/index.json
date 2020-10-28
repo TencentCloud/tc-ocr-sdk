@@ -1,0 +1,6 @@
+{
+  "component": true,
+  "usingComponents": {
+    "seal-picker": "../picker/index"
+  }
+}

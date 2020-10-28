@@ -1,0 +1,66 @@
+<view class="seal-field ext-class">
+  <view wx:if="{{ type === 'textarea' }}" class="seal-field__textarea {{ border && borderPosition ? 'seal-hairline--' + borderPosition : '' }} {{ focusFlag ? 'is-focus' : '' }} {{ disabled ? 'is-disabled' : '' }} {{ readonly ? 'is-readonly' : '' }} {{ error ? 'is-error' : '' }} textarea-class">
+    <textarea 
+      class="seal-field__textarea-item {{ autoHeight ? 'size-auto' : '' }} {{ hasCount ? 'is-count' : '' }}" 
+      name="{{ name }}" 
+      value="{{ value }}" 
+      placeholder="{{ placeholder }}" 
+      placeholder-style="{{ placeholderStyle }}" 
+      placeholder-class="{{ placeholderClass }} {{ error ? 'seal-field__placeholder--error' : '' }}" 
+      disabled="{{ disabled || readonly }}" 
+      maxlength="{{ maxLength }}" 
+      cursor="{{ cursor }}" 
+      cursor-spacing="{{ cursorSpacing }}" 
+      focus="{{ focus }}" 
+      auto-focus="{{ autoFocus }}" 
+      selection-start="{{ selectionStart }}" 
+      selection-end="{{ selectionEnd }}" 
+      adjust-position="{{ adjustPosition }}" 
+      hold-keyboard="{{ holdKeyboard }}" 
+      auto-height="{{ autoHeight }}" 
+      fixed="{{ fixed }}" 
+      show-confirm-bar="{{ showConfirmBar }}" 
+      disable-default-padding="{{ disableDefaultPadding }}"
+      bind:input="handleInput" 
+      bind:focus="handleFocus" 
+      bind:blur="handleBlur" 
+      bind:confirm="handleConfirm" 
+      bind:linechange="handleLineChange" 
+      bind:keyboardheightchange="handleKeyboardHeightChange"
+    >
+    </textarea>
+    <view wx:if="{{ hasCount && maxLength > 0  }}" class="seal-field__textarea-counter">
+      <text class="seal-field__textarea-current">{{ value.length }}</text> / {{ maxLength }}
+    </view>
+  </view>
+  <view wx:else class="seal-field__input {{ border && borderPosition ? 'seal-hairline--' + borderPosition : '' }} {{ focusFlag ? 'is-focus' : '' }}  {{ disabled ? 'is-disabled' : '' }} {{ readonly ? 'is-readonly' : '' }} {{ error ? 'is-error' : '' }} input-class">
+    <input 
+      class="seal-field__input-item" 
+      name="{{ name }}" 
+      value="{{ value }}" 
+      type="{{ type }}" 
+      password="{{ password || type === 'password' }}" 
+      placeholder="{{ placeholder }}" 
+      placeholder-style="{{ placeholderStyle }}" 
+      placeholder-class="{{ placeholderClass }} {{ error ? 'seal-field__placeholder--error' : '' }}" 
+      disabled="{{ disabled || readonly }}" 
+      maxlength="{{ maxLength }}" 
+      cursor="{{ cursor }}" 
+      cursor-spacing="{{ cursorSpacing }}" 
+      focus="{{ focus }}" 
+      auto-focus="{{ autoFocus }}" 
+      confirm-type="{{ confirmType }}" 
+      confirm-hold="{{ confirmHold }}" 
+      selection-start="{{ selectionStart }}" 
+      selection-end="{{ selectionEnd }}" 
+      adjust-position="{{ adjustPosition }}" 
+      hold-keyboard="{{ holdKeyboard }}" 
+      bind:input="handleInput" 
+      bind:focus="handleFocus" 
+      bind:blur="handleBlur" 
+      bind:confirm="handleConfirm" 
+      bind:keyboardheightchange="handleKeyboardHeightChange"
+    >
+    </input>
+  </view>
+</view>

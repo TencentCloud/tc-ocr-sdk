@@ -1,0 +1,73 @@
+<view class="ocr-photograph-panel">
+
+<view class='ocr-photograph-mask ocr-photograph-mask-top' />
+<view class='ocr-photograph-mask ocr-photograph-mask-right' />
+<view class='ocr-photograph-mask ocr-photograph-mask-bottom' />
+<view class='ocr-photograph-mask ocr-photograph-mask-left' />  
+
+<!-- 摄像组件 s -->
+<camera 
+  class="ocr-photograph-camera"
+  flash="{{ isTorchOn ? 'torch' : 'off'}}"
+>
+</camera>
+<!-- 摄像组件 e -->
+
+<!-- 不合规提示 s -->
+<!-- <view class="ocr-photograph-top-warning">
+  <text class="text">显示不合规的具体说明</text>
+</view> -->
+<!-- 不合规提示 e -->
+
+<!-- 拍照选中区域 s -->
+<view class="ocr-photograph-selection-box">
+  <!-- 竖向class[vertical]、横向class[horizontal] -->
+  <view class="ocr-photograph-selection-area vertical ocr-photograph-selection-area-{{theme}}">
+    <!-- 摄像组件 s -->
+    <!-- <camera 
+      class="ocr-photograph-camera"
+      flash="{{ isTorchOn ? 'torch' : 'off'}}"
+    > -->
+      <cover-view wx:if="{{category==='ID_CARD' && side==='FRONT' || category==='ID_CARD_FRONT'}}" style="margin-top:30rpx;margin-left:320rpx;">
+        <cover-image src="https://beta.gtimg.com/GodIdent/huiyan/img/ico-head.png" style="width:140px;height:157px;"></cover-image>
+      </cover-view>
+      <cover-view wx:if="{{category==='ID_CARD' && side==='BACK' || category==='ID_CARD_BACK'}}" style="margin-top:20rpx;margin-left:10rpx;">
+        <cover-image src="https://beta.gtimg.com/GodIdent/huiyan/img/ico-guohui.png" style="width:76px;height:79px;"></cover-image>
+      </cover-view>
+    <!-- </camera> -->
+    <!-- 摄像组件 e -->
+    <view class="border-top-left {{theme}}"></view>
+    <view class="border-top-right {{theme}}"></view>
+    <view class="border-bottom-left {{theme}}"></view>
+    <view class="border-bottom-right {{theme}}"></view>
+  </view>
+
+    <!-- 拍照提示 s -->
+    <view class="ocr-photograph-tips">
+      <view class="icon"></view>
+      <view class="text">证件请避免折角、遮挡和反光</view>
+    </view>
+    <!-- 拍照提示 e -->  
+</view>
+<!-- 拍照选中区域 e -->
+
+<!-- 图片选取 s -->
+<view class="ocr-photograph-btns">
+  <view       
+    class="ocr-photograph-pictuer-btn"
+    bind:tap="chooseImage"
+  >
+  </view>
+  <image 
+    class="ocr-photograph-take-btn ocr-photograph-take-btn-{{theme}}"
+    bind:tap="takeImage"
+  >
+  </image>
+  <!-- 开启闪光 class[active] -->
+  <view 
+    class="ocr-photograph-flash-btn {{ isTorchOn ? 'active' : ''}}"
+    bind:tap="toggleTorch"
+  ></view>
+</view>
+<!-- 图片选取 e -->
+</view>

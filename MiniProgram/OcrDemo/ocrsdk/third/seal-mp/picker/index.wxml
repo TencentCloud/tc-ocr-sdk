@@ -1,0 +1,21 @@
+<view class="{{prefixed}}-picker">
+  <!-- selector || multiSelector -->
+  <view class="{{prefixed}}-picker__head">
+    <view class="{{prefixed}}-picker__cancel" bindtap="_handleCancel">取消</view>
+    <view class="{{prefixed}}-picker__title">
+      <slot></slot>
+    </view>
+    <view class="{{prefixed}}-picker__confirm {{isConfirmDisabled ? prefixed + '-picker__confirm--disabled' : ''}}" bindtap="_handleConfirm">
+      确定
+    </view>
+  </view>
+  <view class="{{prefixed}}-picker__body">
+    <picker-view class="{{prefixed}}-picker__inner" value="{{pickerData.innerValue}}" indicator-style="{{indicatorStyle}}" indicator-class="{{indicatorClass}}" mask-class="{{maskClass}}" mask-style="{{maskStyle}}" bindpickstart="_handlePickerStart" bindpickend="_handlePickerEnd" bindchange="_handleChange">
+      <picker-view-column class="{{prefixed}}-picker__item" wx:for="{{pickerData.range}}" wx:for-item="lists" wx:key="index">
+        <view class="{{prefixed}}-picker__item-inner inner-class" wx:for="{{lists}}" wx:key="index">
+          {{item}}
+        </view>
+      </picker-view-column>
+    </picker-view>
+  </view>
+</view>

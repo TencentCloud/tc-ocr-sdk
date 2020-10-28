@@ -1,0 +1,5 @@
+{
+    "appJsonPath": "app.json",
+    "outputPath": "third/seal-mp",
+    "themePath": "./theme.less"
+}

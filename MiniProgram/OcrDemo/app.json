@@ -1,0 +1,14 @@
+{
+  "pages": [
+    "demo/index/index",
+    "ocrsdk/pages/index/index",
+    "ocrsdk/pages/id-card/id-card"
+  ],
+  "window": {
+
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "usingComponents": {
+  }
+}

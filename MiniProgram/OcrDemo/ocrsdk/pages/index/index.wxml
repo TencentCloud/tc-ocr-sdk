@@ -1,0 +1,14 @@
+<import src="../templates/ocr-result.wxml"></import>
+
+<take-image 
+  wx:if="{{!imageReady || !resultPage}}" 
+  bind:onImageReady="onImageReady"
+  side="{{side}}"
+>
+</take-image>
+
+<template 
+  is="ocr-result"
+  data="{{ imageDetail, ocrResponse, modifiable, theme, sealTheme }}"
+  wx:else="{{imageReady}}"
+></template>

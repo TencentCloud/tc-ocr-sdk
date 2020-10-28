@@ -1,0 +1,8 @@
+{
+  "component": true,
+  "usingComponents": {
+    "seal-list-item": "../list-item/index",
+    "seal-icon": "../icon/index", 
+    "seal-field": "../field/index"
+  }
+}

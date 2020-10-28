@@ -1,0 +1,40 @@
+<view class="seal-list-item {{ itemHeight ? 'size-' + itemHeight : '' }} {{ title && desc ? 'size-large' : '' }} {{ thumb ? 'size-auto' : '' }} {{ border ? 'seal-hairline--bottom' : '' }} {{ icon ? 'with-icon' : '' }} {{ thumb && thumbPosition === 'left' ? 'with-thumb' : '' }} {{ clickable || isLink ? 'is-clickable' : '' }} {{ required ? 'is-required' : '' }} ext-class" bind:tap="tapListItem">
+
+  <seal-icon wx:if="{{ icon }}" ext-class="seal-list-item__left-icon" name="{{ icon }}" color="{{ iconColor }}" size="{{ iconSize }}"></seal-icon>
+  <view wx:elif="{{ thumb && thumbPosition === 'left' }}" class="seal-list-item__thumb--left">
+    <view class="seal-list-item__thumb">
+      <image class="seal-list-item__thumb-img" src="{{ thumb }}" mode="scaleToFill" />
+    </view>
+  </view>
+  <block wx:else>
+    <slot name="icon"></slot>
+  </block>
+
+  <view class="seal-list-item__body" style="{{ titleWidth ? 'max-width:' + titleWidth + '; min-width:' + titleWidth : '' }}">
+    <view wx:if="{{ title }}" class="seal-list-item__title title-class">{{ title }}</view>
+    <view wx:if="{{ desc }}" class="seal-list-item__desc desc-class">{{ desc }}</view>
+    <block wx:else>
+      <slot name="title"></slot>
+    </block>
+  </view>
+
+  <view class="seal-list-item__value value-class" style="{{ titleWidth && valueAlignLeft ? 'text-align: left;' : '' }}">
+    <block wx:if="{{ value }}">{{ value }}</block>
+    <block wx:else>
+      <slot></slot>
+    </block>
+    <seal-icon wx:if="{{ detail & vertical }}" class="seal-list-item__detail-icon--vertical" ext-class="seal-list-item__right-icon" name="chevronright" color="#BBBBBB"></seal-icon>
+  </view>
+
+  
+  <view wx:if="{{ thumb && thumbPosition === 'right' }}" class="seal-list-item__thumb--right">
+    <view class="seal-list-item__thumb">
+      <image class="seal-list-item__thumb-img"  src="{{ thumb }}" mode="scaleToFill" />
+    </view>
+  </view>
+  <seal-icon wx:if="{{ detail & !vertical }}" class="seal-list-item__detail-icon" ext-class="seal-list-item__right-icon" name="chevronright" color="#BBBBBB"></seal-icon>
+  <block wx:else>
+    <slot name="right-icon"></slot>
+  </block>
+
+</view>

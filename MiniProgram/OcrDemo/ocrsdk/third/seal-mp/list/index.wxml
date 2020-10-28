@@ -1,0 +1,6 @@
+<view class="seal-list ext-class">
+  <view wx:if="{{ title }}" class="seal-list__title">{{ title }}</view>
+    <view class="seal-list__wrap {{ border && borderPosition ? 'seal-hairline--' + borderPosition : '' }}">
+      <slot></slot>
+    </view>
+</view>

@@ -1,0 +1,34 @@
+<!-- 头图背景 start -->
+<view class="ocr-head-bg"></view>
+<!-- 头图背景 end -->
+
+<!-- 功能列表 start -->
+<view class="ocr-features-list">
+  <view class="ocr-features-inner">
+    <view 
+      class="ocr-features-card" 
+      wx:for="{{ cardList }}" 
+      wx:for-item="item" 
+      wx:key="key"
+      data-item="{{item}}"
+      bind:tap="onItemTap"
+    >
+      <view class="col-image">
+        <image src="{{ item.img }}" class="image"></image>
+      </view>
+      <view class="col-text">
+        <view class="title">{{ item.title }}</view>
+        <view class="text">{{ item.text }}</view>
+      </view>
+    </view>
+  </view>
+</view>
+<!-- 功能列表 end -->
+
+<view class="ocr-result-form-list">
+  <seal-list>
+    <view wx:for="{{result}}" wx:key="index" wx:for-index="key" wx:for-item="value">
+      <seal-form border textAlign="left" labelWidth="4em" label="{{key}}" value="{{value}}"></seal-form>
+    </view>
+  </seal-list>
+</view>
