@@ -183,8 +183,6 @@
   width:28px;
   margin-bottom:-5px;
   margin-right: 20rpx;
-  background-image: url('https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/warning.svg');
-  background-repeat: no-repeat;
 }
 
 .ocr-photograph-btns{
@@ -201,27 +199,15 @@
   width:68rpx;
   height:68rpx;
   background-size: 100% 100%;
-  background-image: url('https://imgcache.qq.com/open_proj/proj_qcloud_v2/rocket_images/1593483196042_prfjjcube6irudi.svg')
 }
 .ocr-photograph-take-btn{
   width:160rpx;
   height:160rpx;
   background-size: 100% 100%;
   margin:0 80rpx;
-  background-image: url("https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicPrimary.svg");
-}
-.ocr-photograph-take-btn-primary{
-  background-image: url("https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicPrimary.svg");
-}
-.ocr-photograph-take-btn-native{
-  background-image: url("https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicNative.svg");
 }
 .ocr-photograph-flash-btn{
   width:82rpx;
   height:82rpx;
   background-size: 100% 100%;
-  background-image: url('https://imgcache.qq.com/open_proj/proj_qcloud_v2/rocket_images/1593483198796_p6j3f08go58ulnb3xr.svg');
-}
-.ocr-photograph-flash-btn.active{
-  background-image: url('https://imgcache.qq.com/open_proj/proj_qcloud_v2/rocket_images/1593483196041_byihnbelj6l3ul3di.svg');
 }
