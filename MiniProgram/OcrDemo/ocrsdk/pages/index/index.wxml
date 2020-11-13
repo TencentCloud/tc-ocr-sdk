@@ -1,6 +1,7 @@
 <import src="../templates/ocr-result.wxml"></import>
 
 <take-image 
+  id="takeImage"
   wx:if="{{!imageReady || !resultPage}}" 
   bind:onImageReady="onImageReady"
   side="{{side}}"

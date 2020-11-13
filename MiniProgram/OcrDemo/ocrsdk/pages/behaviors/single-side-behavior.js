@@ -18,8 +18,13 @@ module.exports = Behavior({
      * 用户选择好了照片(拍摄或者从相册选择)，送检
      */
     async onImageReady(e) {
+      const { isAuto } = e.detail;
+      if (!isAuto) {
+        await this.setData({
+          imageReady: true,
+        });
+      }
       await this.setData({
-        imageReady: true,
         imageDetail: e.detail,
       });
       this.upload(e);

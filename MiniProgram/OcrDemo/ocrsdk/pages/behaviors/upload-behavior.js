@@ -3,10 +3,13 @@ const uploadImage = require('../../utils/uploadImage');
 module.exports = Behavior({
   methods: {
     async upload(e) {
-      wx.showLoading({
-        title: '识别中',
-        mask: true,
-      });
+      const { isAuto } = e.detail;
+      if (!isAuto) {
+        wx.showLoading({
+          title: '识别中',
+          mask: true,
+        });
+      };
 
       // 获取临时密钥
       const { getAuthorization } = wx.clientInfo;
@@ -29,8 +32,15 @@ module.exports = Behavior({
       const res = await uploadImage(e.detail);
       wx.hideLoading();
       if (res.Error) {
-        this.onOcrFail(e.detail, res);
+        if (isAuto) {
+          this.selectComponent('#takeImage').startAuto();
+        } else {
+          this.onOcrFail(e.detail, res);
+        };
       } else {
+        if (isAuto) {
+          this.setData({ imageReady: true });
+        };
         this.onOcrSuccess(e.detail, res);
       }
     },

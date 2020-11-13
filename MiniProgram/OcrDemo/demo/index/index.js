@@ -5,27 +5,30 @@ const { secretId, secretKey } = require('../config');
 
 Page({
   data: {
-    result: null,
+    themes: [
+      {
+        theme: 'primary',
+        color: '#006EFF',
+      },
+      {
+        theme: 'native',
+        color: '#07C160',
+      },
+    ],
+    maxTryArray: [1, 2, 3, 4, 5, 6, 7, 8, 9, 10],
+    displayContent: 'cardList',
+    selectedTheme: 0,
+    maxTryKey: 2,
+    autoMode: false,
+    resultPage: false,
+    modifiable: false,
+    disableAlbum: false,
     cardList: [
       {
         type: OcrType.ID_CARD,
-        title: '身份证（双面）',
+        title: '身份证',
         text: '识别身份证件',
         img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/card-id-front.svg',
-        config: { CropIdCard: true, CropPortrait: true },
-      },
-      {
-        type: OcrType.ID_CARD_FRONT,
-        title: '身份证正面',
-        text: '人像面',
-        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/card-id-front.svg',
-        config: { CropIdCard: true, CropPortrait: true },
-      },
-      {
-        type: OcrType.ID_CARD_BACK,
-        title: '身份证反面',
-        text: '国徽面',
-        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/card-id-back.svg',
         config: { CropIdCard: true, CropPortrait: true },
       },
       {
@@ -54,6 +57,7 @@ Page({
   onItemTap(e) {
     const { item } = e.currentTarget.dataset;
     const { type, config } = item;
+    const { themes, selectedTheme, autoMode, maxTryArray, maxTryKey, resultPage, modifiable, disableAlbum } = this.data;
     ocrSdk.start({
       secretId,
       secretKey,
@@ -61,20 +65,78 @@ Page({
       ocrOption: {
         Config: config,
       },
-      resultPage: true,
-      resultPageConfig: {
-        // modifiable: true,
+      cameraConfig: {
+        autoMode,
+        maxTry: maxTryArray[maxTryKey],
+        disableAlbum,
       },
-      // theme: 'native',
+      resultPage,
+      resultPageConfig: {
+        modifiable,
+      },
+      theme: themes[selectedTheme].theme,
       success: (res) => {
         console.log('ocr result is:', res);
-        wx.navigateTo({
-          url: '/demo/index/index',
-        });
+        if (!resultPage) {
+          wx.showToast({
+            icon: 'success',
+            duration: 3000,
+            title: '识别成功',
+          });
+          setTimeout(() => {
+            wx.navigateBack();
+          }, 3000);
+        } else {
+          wx.navigateBack();
+        }
       },
       fail: (error) => {
         console.log('ocr failed:', error);
       },
+    });
+  },
+
+  toggleSettings() {
+    const { displayContent } = this.data;
+    this.setData({
+      displayContent: displayContent === 'settings' ? 'cardList' : 'settings',
+    });
+  },
+
+  pickTheme(e) {
+    const selectedTheme = e.detail.value;
+    this.setData({
+      selectedTheme,
+    });
+  },
+
+  toggleAutoMode(e) {
+    this.setData({
+      autoMode: e.detail.value,
+    });
+  },
+
+  setMaxTry(e) {
+    const maxTryKey = e.detail.value;
+    this.setData({
+      maxTryKey,
+    });
+  },
+
+  toggleResultPage(e) {
+    this.setData({
+      resultPage: e.detail.value,
+    });
+  },
+
+  toggleModifiable(e) {
+    this.setData({
+      modifiable: e.detail.value,
+    });
+  },
+  toggleAlbum(e) {
+    this.setData({
+      disableAlbum: e.detail.value,
     });
   },
 });

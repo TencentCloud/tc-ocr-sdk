@@ -80,6 +80,7 @@
 <!-- 信息列表区 end -->
 
 <take-image 
+  id="takeImage"
   wx:if="{{showCamera}}"
   bind:onImageReady="onImageReady"
   option="{{cameraInfo}}"

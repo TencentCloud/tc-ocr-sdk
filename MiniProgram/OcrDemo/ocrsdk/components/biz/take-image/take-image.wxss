@@ -196,18 +196,40 @@
   align-items:center;
 }
 .ocr-photograph-pictuer-btn{
-  width:68rpx;
-  height:68rpx;
+  width:82rpx;
+  height:82rpx;
+  margin:0 40rpx;
   background-size: 100% 100%;
 }
 .ocr-photograph-take-btn{
   width:160rpx;
   height:160rpx;
   background-size: 100% 100%;
-  margin:0 80rpx;
+  margin:0 40rpx;
+  background-image: url("https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicPrimary.svg");
+}
+.ocr-photograph-take-btn-primary{
+  background-image: url("https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicPrimary.svg");
 }
 .ocr-photograph-flash-btn{
   width:82rpx;
   height:82rpx;
+  margin:0 40rpx;
   background-size: 100% 100%;
+}
+
+.ocr-photograph-bar{
+  width: 100%;
+  height: 6rpx;
+  position: absolute;
+  top: 0;
+  opacity: 0.8;
+}
+
+.ocr-photograph-bar-primary{
+  background-color: #006EFF;
+}
+
+.ocr-photograph-bar-native{
+  background-color: #07C160;
 }

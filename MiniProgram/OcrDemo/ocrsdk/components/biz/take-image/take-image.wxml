@@ -5,6 +5,11 @@
   >
     <cover-view class="ocr-photograph-selection-box">
       <cover-view class="ocr-photograph-selection-area vertical ocr-photograph-selection-area-{{theme}}">
+        <cover-view 
+          class="ocr-photograph-bar ocr-photograph-bar-{{theme}}"
+          wx:if="{{isAutoMode}}"
+          animation="{{barMove}}"
+          bindtransitionend="reAnimation"></cover-view>
         <cover-view wx:if="{{category==='ID_CARD' && side==='FRONT' || category==='ID_CARD_FRONT'}}" style="margin-top:30rpx;margin-left:320rpx;">
           <cover-image src="https://beta.gtimg.com/GodIdent/huiyan/img/ico-head.png" style="width:140px;height:157px;"></cover-image>
         </cover-view>
@@ -23,11 +28,13 @@
 
       <cover-view class="ocr-photograph-btns">
         <cover-image       
+          wx:if="{{!disableAlbum}}"
           class="ocr-photograph-pictuer-btn"
           src="https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/chooseImg.png"
           bind:tap="chooseImage"
         />
         <cover-image 
+          wx:if="{{!isAutoMode}}"
           class="ocr-photograph-take-btn ocr-photograph-take-btn-{{theme}}"
           src="{{theme==='native' ? 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicNative.png' : 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicPrimary.png'}}"
           bind:tap="takeImage"

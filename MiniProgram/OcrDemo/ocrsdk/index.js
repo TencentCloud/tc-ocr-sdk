@@ -9,6 +9,7 @@ export function start(params) {
     secretKey,
     ocrType,
     ocrOption,
+    cameraConfig,
     resultPage,
     resultPageConfig,
     theme,
@@ -46,15 +47,46 @@ export function start(params) {
     secretKey,
     ocrType,
     ocrOption,
+    cameraConfig,
     resultPage: !!resultPage,
     resultPageConfig,
     theme: getTheme(theme),
     onFinish: success,
     fail,
   };
-  wx.navigateTo({
-    url:
-      `/ocrsdk/pages/${ROUTE_ENUM[ocrType]}`,
+  wx.getSetting({
+    success(res) {
+      if (!res.authSetting['scope.camera']) {
+        wx.authorize({
+          scope: 'scope.camera',
+          success() {
+            wx.navigateTo({
+              url:
+                `/ocrsdk/pages/${ROUTE_ENUM[ocrType]}`,
+            });
+          },
+          fail() {
+            wx.showModal({
+              title: '提示',
+              content: '请打开摄像头权限',
+              confirmText: '去设置',
+              success(res) {
+                if (res.confirm) {
+                  wx.openSetting();
+                } else if (res.cancel) {
+                  return;
+                }
+              },
+            });
+          },
+        });
+      } else {
+        wx.navigateTo({
+          url:
+            `/ocrsdk/pages/${ROUTE_ENUM[ocrType]}`,
+        });
+      }
+    },
   });
 }
 

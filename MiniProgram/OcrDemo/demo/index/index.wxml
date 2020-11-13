@@ -1,9 +1,15 @@
 <!-- 头图背景 start -->
-<view class="ocr-head-bg"></view>
+<view class="ocr-head-bg .ocr-head-bg-{{themes[selectedTheme].theme}}">
+  <image
+    class="ocr-setting-btn"
+    src="https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/settings.svg" 
+    bind:tap="toggleSettings"
+  />
+</view>
 <!-- 头图背景 end -->
 
 <!-- 功能列表 start -->
-<view class="ocr-features-list">
+<view class="ocr-features-list" wx:if="{{displayContent==='cardList'}}">
   <view class="ocr-features-inner">
     <view 
       class="ocr-features-card" 
@@ -25,10 +31,74 @@
 </view>
 <!-- 功能列表 end -->
 
-<view class="ocr-result-form-list">
-  <seal-list>
-    <view wx:for="{{result}}" wx:key="index" wx:for-index="key" wx:for-item="value">
-      <seal-form border textAlign="left" labelWidth="4em" label="{{key}}" value="{{value}}"></seal-form>
+<view class="ocr-config" wx:if="{{displayContent==='settings'}}">
+  <view class="ocr-config-item">
+    <view class="ocr-config-item-title">
+      当前主题：
     </view>
-  </seal-list>
+    <picker 
+        bindchange="pickTheme" 
+        value="{{selectedTheme}}" 
+        range="{{themes}}"
+        range-key="theme"
+    >
+      {{themes[selectedTheme].theme}}
+    </picker>
+  </view>
+  <view class="ocr-config-item">
+    <view class="ocr-config-item-title">
+      优先使用自动模式：
+    </view>
+    <switch 
+    checked="{{autoMode}}" 
+    bindchange="toggleAutoMode"
+    color="{{themes[selectedTheme].color}}"/>
+  </view>
+  <view class="ocr-config-item" wx:if="{{autoMode}}">
+    <view class="ocr-config-item-title">
+      自动模式下最多尝试次数：
+    </view>
+    <picker 
+        bindchange="setMaxTry" 
+        value="{{maxTryKey}}" 
+        range="{{maxTryArray}}"
+    >
+      {{maxTryArray[maxTryKey]}}次
+    </picker>
+  </view>  
+  <view class="ocr-config-item">
+    <view class="ocr-config-item-title">
+      禁止从相册选择照片：
+    </view>
+    <switch 
+    checked="{{disableAlbum}}" 
+    bindchange="toggleAlbum"
+    color="{{themes[selectedTheme].color}}"/>
+  </view> 
+  <view class="ocr-config-item">
+    <view class="ocr-config-item-title">
+      展示结果页：
+    </view>
+    <switch 
+    checked="{{resultPage}}" 
+    bindchange="toggleResultPage"
+    color="{{themes[selectedTheme].color}}"/>
+  </view> 
+  <view class="ocr-config-item" wx:if="{{resultPage}}">
+    <view class="ocr-config-item-title">
+      允许对识别结果进行修改：
+    </view>
+    <switch 
+    checked="{{modifiable}}" 
+    bindchange="toggleModifiable"
+    color="{{themes[selectedTheme].color}}"/>
+  </view>
+  <view class="btn-media">
+    <seal-button 
+      color="{{themes[selectedTheme].theme==='native' ? 'success' : themes[selectedTheme].theme}}" 
+      bind:tap="toggleSettings"
+    >
+      回到首页
+    </seal-button>
+  </view>
 </view>

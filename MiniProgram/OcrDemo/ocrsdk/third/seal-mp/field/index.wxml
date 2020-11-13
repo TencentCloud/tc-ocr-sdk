@@ -1,7 +1,7 @@
 <view class="seal-field ext-class">
   <view wx:if="{{ type === 'textarea' }}" class="seal-field__textarea {{ border && borderPosition ? 'seal-hairline--' + borderPosition : '' }} {{ focusFlag ? 'is-focus' : '' }} {{ disabled ? 'is-disabled' : '' }} {{ readonly ? 'is-readonly' : '' }} {{ error ? 'is-error' : '' }} textarea-class">
     <textarea 
-      class="seal-field__textarea-item {{ autoHeight ? 'size-auto' : '' }} {{ hasCount ? 'is-count' : '' }}" 
+      class="seal-field__textarea-item size-auto {{ hasCount ? 'is-count' : '' }}" 
       name="{{ name }}" 
       value="{{ value }}" 
       placeholder="{{ placeholder }}" 
@@ -17,7 +17,7 @@
       selection-end="{{ selectionEnd }}" 
       adjust-position="{{ adjustPosition }}" 
       hold-keyboard="{{ holdKeyboard }}" 
-      auto-height="{{ autoHeight }}" 
+      auto-height="{{ true }}" 
       fixed="{{ fixed }}" 
       show-confirm-bar="{{ showConfirmBar }}" 
       disable-default-padding="{{ disableDefaultPadding }}"

@@ -23,23 +23,25 @@ module.exports = Behavior({
      */
     async onImageReady(e) {
       // 关闭摄像头，保持文件路径
-      const { side, filePath } = e.detail;
-      switch (side) {
-        case SIDE_ENUM.FRONT:
-          await this.setData({
-            showCamera: false,
-            frontSidePath: filePath,
-            frontState: 'waiting',
-          });
-          break;
-        case SIDE_ENUM.BACK:
-          this.setData({
-            showCamera: false,
-            backSidePath: filePath,
-            backState: 'waiting',
-          });
-          break;
-      };
+      const { side, filePath, isAuto } = e.detail;
+      if (!isAuto) {
+        switch (side) {
+          case SIDE_ENUM.FRONT:
+            await this.setData({
+              showCamera: false,
+              frontSidePath: filePath,
+              frontState: 'waiting',
+            });
+            break;
+          case SIDE_ENUM.BACK:
+            this.setData({
+              showCamera: false,
+              backSidePath: filePath,
+              backState: 'waiting',
+            });
+            break;
+        };
+      }
       this.upload(e);
     },
 
@@ -50,7 +52,7 @@ module.exports = Behavior({
       const { ocrType } = wx.clientInfo;
       const previousResult = this.data.ocrResponse;
       const previousOriginResult = this.data.originResult;
-      const { side } = detail;
+      const { side, filePath } = detail;
 
       const newResponse = mapOcrToDisplay(res);
       Object.keys(newResponse).forEach((item) => {
@@ -73,9 +75,17 @@ module.exports = Behavior({
       newOrigin.RequestId[side] = res.RequestId;
 
       if (side === SIDE_ENUM.FRONT) {
-        this.setData({ frontState: 'success_no_circle' });
+        this.setData({
+          showCamera: false,
+          frontSidePath: filePath,
+          frontState: 'success_no_circle',
+        });
       } else {
-        this.setData({ backState: 'success_no_circle' });
+        this.setData({
+          showCamera: false,
+          backSidePath: filePath,
+          backState: 'success_no_circle',
+        });
       }
 
       this.setData({

@@ -1,8 +1,6 @@
 {
   "backgroundTextStyle": "light",
-  "navigationBarBackgroundColor": "#006EFF",
   "navigationBarTitleText": "腾讯云OCR体验Demo",
-  "navigationBarTextStyle": "white",
   "usingComponents": {
     "seal-button": "../../ocrsdk/third/seal-mp/button/index",
     "seal-district-picker": "../../ocrsdk/third/seal-mp/district-picker/index",
