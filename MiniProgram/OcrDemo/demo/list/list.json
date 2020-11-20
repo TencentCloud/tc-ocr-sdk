@@ -1,0 +1,15 @@
+{
+  "backgroundTextStyle": "light",
+  "navigationBarTitleText": "腾讯云OCR体验Demo",
+  "usingComponents": {
+    "seal-button": "../../ocrsdk/third/seal-mp/button/index",
+    "seal-district-picker": "../../ocrsdk/third/seal-mp/district-picker/index",
+    "seal-field": "../../ocrsdk/third/seal-mp/field/index",
+    "seal-form": "../../ocrsdk/third/seal-mp/form/index",
+    "seal-icon": "../../ocrsdk/third/seal-mp/icon/index",
+    "seal-list": "../../ocrsdk/third/seal-mp/list/index",
+    "seal-list-item": "../../ocrsdk/third/seal-mp/list-item/index",
+    "seal-loading": "../../ocrsdk/third/seal-mp/loading/index",
+    "seal-picker": "../../ocrsdk/third/seal-mp/picker/index"
+  }
+}

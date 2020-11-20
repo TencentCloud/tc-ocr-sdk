@@ -20,7 +20,8 @@
       bind:tap="onItemTap"
     >
       <view class="col-image">
-        <image src="{{ item.img }}" class="image"></image>
+        <image src="{{ item.img }}" class="image" wx:if="{{selectedTheme == 0}}"></image>
+        <image src="{{ item.imgNative }}" class="image" wx:if="{{selectedTheme == 1}}"></image>
       </view>
       <view class="col-text">
         <view class="title">{{ item.title }}</view>
@@ -33,8 +34,8 @@
 
 <view class="ocr-config" wx:if="{{displayContent==='settings'}}">
   <view class="ocr-config-item">
-    <view class="ocr-config-item-title">
-      当前主题：
+    <view class="ocr-config-item-title" data-configtype="theme" bind:tap="onConfigTap">
+      主题<seal-icon name="question"/>：
     </view>
     <picker 
         bindchange="pickTheme" 
@@ -46,17 +47,8 @@
     </picker>
   </view>
   <view class="ocr-config-item">
-    <view class="ocr-config-item-title">
-      优先使用自动模式：
-    </view>
-    <switch 
-    checked="{{autoMode}}" 
-    bindchange="toggleAutoMode"
-    color="{{themes[selectedTheme].color}}"/>
-  </view>
-  <view class="ocr-config-item" wx:if="{{autoMode}}">
-    <view class="ocr-config-item-title">
-      自动模式下最多尝试次数：
+    <view class="ocr-config-item-title" data-configtype="maxTry" bind:tap="onConfigTap">
+      自动模式下最多尝试次数<seal-icon name="question"/>：
     </view>
     <picker 
         bindchange="setMaxTry" 
@@ -67,8 +59,8 @@
     </picker>
   </view>  
   <view class="ocr-config-item">
-    <view class="ocr-config-item-title">
-      禁止从相册选择照片：
+    <view class="ocr-config-item-title" data-configtype="disableAlbum" bind:tap="onConfigTap">
+      禁用相册<seal-icon name="question"/>：
     </view>
     <switch 
     checked="{{disableAlbum}}" 
@@ -76,8 +68,8 @@
     color="{{themes[selectedTheme].color}}"/>
   </view> 
   <view class="ocr-config-item">
-    <view class="ocr-config-item-title">
-      展示结果页：
+    <view class="ocr-config-item-title" data-configtype="resultPage" bind:tap="onConfigTap">
+      展示结果页<seal-icon name="question"/>：
     </view>
     <switch 
     checked="{{resultPage}}" 
@@ -85,8 +77,8 @@
     color="{{themes[selectedTheme].color}}"/>
   </view> 
   <view class="ocr-config-item" wx:if="{{resultPage}}">
-    <view class="ocr-config-item-title">
-      允许对识别结果进行修改：
+    <view class="ocr-config-item-title" data-configtype="modifiable" bind:tap="onConfigTap">
+      结果可修改<seal-icon name="question"/>：
     </view>
     <switch 
     checked="{{modifiable}}" 

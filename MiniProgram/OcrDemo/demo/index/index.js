@@ -1,7 +1,4 @@
-// 引入 OCR SDK 文件
-const ocrSdk = require('../../ocrsdk/index');
-const { OcrType } = ocrSdk;
-const { secretId, secretKey } = require('../config');
+const configExplanation = require('../configExplanation');
 
 Page({
   data: {
@@ -19,29 +16,23 @@ Page({
     displayContent: 'cardList',
     selectedTheme: 0,
     maxTryKey: 2,
-    autoMode: false,
-    resultPage: false,
+    resultPage: true,
     modifiable: false,
     disableAlbum: false,
     cardList: [
       {
-        type: OcrType.ID_CARD,
-        title: '身份证',
-        text: '识别身份证件',
-        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/card-id-front.svg',
-        config: { CropIdCard: true, CropPortrait: true },
+        modeType: 'auto',
+        title: '自动识别模式',
+        text: '无需点击拍照，系统捕捉到证件自动识别',
+        imgNative: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/autoModeNative.svg',
+        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/autoMode.svg',
       },
       {
-        type: OcrType.BANK_CARD,
-        title: '银行卡',
-        text: '识别银行卡号码等',
-        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/card-bank.svg',
-      },
-      {
-        type: OcrType.BUSINESS_CARD,
-        title: '名片',
-        text: '扫描名片识别内容',
-        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/card-business.svg',
+        modeType: 'manual',
+        title: '拍照识别模式',
+        text: '点击拍照后，系统再进行识别',
+        imgNative: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicNative.svg',
+        img: 'https://ocr-static-1254418846.file.myqcloud.com/mpsdk/images/takePicPrimary.svg',
       },
     ],
   },
@@ -56,43 +47,19 @@ Page({
 
   onItemTap(e) {
     const { item } = e.currentTarget.dataset;
-    const { type, config } = item;
-    const { themes, selectedTheme, autoMode, maxTryArray, maxTryKey, resultPage, modifiable, disableAlbum } = this.data;
-    ocrSdk.start({
-      secretId,
-      secretKey,
-      ocrType: type,
-      ocrOption: {
-        Config: config,
-      },
-      cameraConfig: {
-        autoMode,
-        maxTry: maxTryArray[maxTryKey],
-        disableAlbum,
-      },
-      resultPage,
-      resultPageConfig: {
-        modifiable,
-      },
+    const { modeType } = item;
+    const { themes, selectedTheme, maxTryArray, maxTryKey, resultPage, modifiable, disableAlbum } = this.data;
+    wx.demoConfig = {
       theme: themes[selectedTheme].theme,
-      success: (res) => {
-        console.log('ocr result is:', res);
-        if (!resultPage) {
-          wx.showToast({
-            icon: 'success',
-            duration: 3000,
-            title: '识别成功',
-          });
-          setTimeout(() => {
-            wx.navigateBack();
-          }, 3000);
-        } else {
-          wx.navigateBack();
-        }
-      },
-      fail: (error) => {
-        console.log('ocr failed:', error);
-      },
+      autoMode: !!(modeType === 'auto'),
+      maxTry: maxTryArray[maxTryKey],
+      resultPage,
+      modifiable,
+      disableAlbum,
+    };
+    wx.navigateTo({
+      url:
+        '/demo/list/list',
     });
   },
 
@@ -108,12 +75,7 @@ Page({
     this.setData({
       selectedTheme,
     });
-  },
-
-  toggleAutoMode(e) {
-    this.setData({
-      autoMode: e.detail.value,
-    });
+    console.log(selectedTheme)
   },
 
   setMaxTry(e) {
@@ -139,4 +101,15 @@ Page({
       disableAlbum: e.detail.value,
     });
   },
+  onConfigTap(e) {
+    const { configtype } = e.currentTarget.dataset;
+    const title = configExplanation[configtype].title;
+    const content = configExplanation[configtype].content;
+    wx.showModal({
+      title,
+      content,
+      showCancel: false,
+      confirmText: '我知道了',
+    })
+  }
 });

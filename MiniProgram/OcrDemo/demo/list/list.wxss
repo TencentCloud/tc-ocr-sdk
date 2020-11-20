@@ -1,0 +1,21 @@
+/* demo/list/list.wxss */
+@import "../../ocrsdk/pages/style.wxss";
+
+.ocr-config{
+  padding:40rpx 60rpx 100rpx 60rpx;
+}
+
+.ocr-config-item{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+
+.ocr-setting-btn{
+  position: absolute;
+  right: 20rpx;
+  top: 20rpx;
+  width: 40px;
+  height: 40px;
+}

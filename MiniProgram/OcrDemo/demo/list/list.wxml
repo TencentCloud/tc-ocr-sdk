@@ -1,0 +1,25 @@
+<!-- 头图背景 start -->
+<view class="ocr-head-bg .ocr-head-bg-{{theme}}">
+</view>
+<!-- 头图背景 end -->
+
+<view class="ocr-features-list">
+  <view class="ocr-features-inner">
+    <view 
+      class="ocr-features-card" 
+      wx:for="{{ cardList }}" 
+      wx:for-item="item" 
+      wx:key="key"
+      data-item="{{item}}"
+      bind:tap="onItemTap"
+    >
+      <view class="col-image">
+        <image src="{{ item.img }}" class="image"></image>
+      </view>
+      <view class="col-text">
+        <view class="title">{{ item.title }}</view>
+        <view class="text">{{ item.text }}</view>
+      </view>
+    </view>
+  </view>
+</view>
