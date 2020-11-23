@@ -1,6 +1,7 @@
 {
   "pages": [
     "demo/index/index",
+    "demo/list/list",
     "ocrsdk/pages/index/index",
     "ocrsdk/pages/id-card/id-card"
   ],
