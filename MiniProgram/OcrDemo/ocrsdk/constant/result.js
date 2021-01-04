@@ -25,39 +25,111 @@ const RESULT_ENUM = {
 
 const FIELD_ENUM = {
   [CATEGORY_ENUM.BANK_CARD]: {
-    CardNo: '卡号',
-    BankInfo: '银行信息',
-    ValidDate: '有效期',
+    CardNo: {
+      title: '卡号',
+      type: 'input',
+    },
+    BankInfo: {
+      title: '银行信息',
+      type: 'input',
+    },
+    ValidDate: {
+      title: '有效期',
+      type: 'input',
+    },
   },
   [CATEGORY_ENUM.ID_CARD]: {
-    Name: '姓名',
-    Sex: '性别',
-    Nation: '民族',
-    Birth: '出生日期',
-    Address: '地址',
-    IdNum: '身份证号',
-    Authority: '发证机关',
-    ValidDate: '证件有效期',
+    Name: {
+      title: '姓名',
+    },
+    Sex: {
+      title: '性别',
+      type: 'input',
+    },
+    Nation: {
+      title: '民族',
+      type: 'input',
+    },
+    Birth: {
+      title: '出生日期',
+      type: 'input',
+    },
+    Address: {
+      title: '地址',
+    },
+    IdNum: {
+      title: '身份证号',
+      type: 'input',
+    },
+    Authority: {
+      title: '发证机关',
+    },
+    ValidDate: {
+      title: '证件有效期',
+      type: 'input',
+    },
   },
   [CATEGORY_ENUM.ID_CARD_FRONT]: {
-    Name: '姓名',
-    Sex: '性别',
-    Nation: '民族',
-    Birth: '出生日期',
-    Address: '地址',
-    IdNum: '身份证号',
-    Authority: '发证机关',
-    ValidDate: '证件有效期',
+    Name: {
+      title: '姓名',
+    },
+    Sex: {
+      title: '性别',
+      type: 'input',
+    },
+    Nation: {
+      title: '民族',
+      type: 'input',
+    },
+    Birth: {
+      title: '出生日期',
+      type: 'input',
+    },
+    Address: {
+      title: '地址',
+    },
+    IdNum: {
+      title: '身份证号',
+      type: 'input',
+    },
+    Authority: {
+      title: '发证机关',
+    },
+    ValidDate: {
+      title: '证件有效期',
+      type: 'input',
+    },
   },
   [CATEGORY_ENUM.ID_CARD_BACK]: {
-    Name: '姓名',
-    Sex: '性别',
-    Nation: '民族',
-    Birth: '出生日期',
-    Address: '地址',
-    IdNum: '身份证号',
-    Authority: '发证机关',
-    ValidDate: '证件有效期',
+    Name: {
+      title: '姓名',
+    },
+    Sex: {
+      title: '性别',
+      type: 'input',
+    },
+    Nation: {
+      title: '民族',
+      type: 'input',
+    },
+    Birth: {
+      title: '出生日期',
+      type: 'input',
+    },
+    Address: {
+      title: '地址',
+    },
+    IdNum: {
+      title: '身份证号',
+      type: 'input',
+    },
+    Authority: {
+      title: '发证机关',
+    },
+    ValidDate: {
+      title: '证件有效期',
+      type: 'input',
+    },
   },
 };
 

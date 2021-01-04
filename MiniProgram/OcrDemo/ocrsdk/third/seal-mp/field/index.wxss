@@ -398,14 +398,14 @@
 .seal-field__textarea-item {
   display: block;
   width: 100%;
-  height: auto;
-  min-height: 96px;
-  max-height: 180px;
+  /* height: auto; */
+  max-height: 4.5em;
+  line-height: 1.5em;
 }
-.seal-field__textarea-item.size-auto {
+/* .seal-field__textarea-item.size-auto {
   min-height: 0;
   max-height: none;
-}
+} */
 .seal-field__textarea-item.is-count {
   padding-bottom: 30px;
 }

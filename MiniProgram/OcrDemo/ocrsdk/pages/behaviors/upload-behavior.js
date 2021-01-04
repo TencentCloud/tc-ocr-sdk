@@ -15,7 +15,6 @@ module.exports = Behavior({
       const { getAuthorization } = wx.clientInfo;
       if (getAuthorization) {
         const authRes = await getAuthorization();
-        console.log('authRes', authRes);
         const { tmpSecretId, tmpSecretKey, token } = authRes;
         if (!tmpSecretId || !tmpSecretKey) {
           wx.showToast({

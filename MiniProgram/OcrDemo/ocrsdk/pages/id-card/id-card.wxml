@@ -48,7 +48,7 @@
         border 
         wx:if="{{value.side==='FRONT'}}"
         textAlign="left" labelWidth="4em" 
-        type="textarea" 
+        type="{{value.type}}" 
         autoHeight
         label="{{value.title}}" 
         value="{{value.value}}"
@@ -62,7 +62,7 @@
         border 
         wx:if="{{value.side==='BACK'}}"
         textAlign="left" labelWidth="4em"
-        type="textarea" 
+        type="{{value.type}}" 
         autoHeight  
         label="{{value.title}}" 
         value="{{value.value}}"

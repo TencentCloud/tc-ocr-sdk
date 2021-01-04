@@ -94,7 +94,6 @@ export function sign(action, filePath) {
       method: 'POST',
       header,
       success({ data: { Response } }) {
-        console.log(Response);
         resolve(Response);
       },
       fail(err) {

@@ -11,8 +11,9 @@ function mapOcrToDisplay(ocrResult) {
       Object.keys(ocrResult).forEach((item) => {
         if (meta[item] && ocrResult[item]) {
           displayResult[item] = {
-            title: meta[item],
+            title: meta[item].title,
             value: ocrResult[item],
+            type: meta[item].type || (ocrResult[item].length > 12 ? 'textarea' : 'input'),
           };
         }
       });
@@ -23,6 +24,7 @@ function mapOcrToDisplay(ocrResult) {
         displayResult[field.Name] = {
           title: field.Name,
           value: field.Value,
+          type: field.Value.length > 12 ? 'textarea' : 'input',
         };
       });
       break;

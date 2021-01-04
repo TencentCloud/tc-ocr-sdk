@@ -14,7 +14,7 @@
         <seal-form 
           border 
           textAlign="left" labelWidth="4em" 
-          type="textarea" 
+          type="{{value.type}}" 
           autoHeight
           label="{{value.title}}" 
           value="{{value.value}}"
