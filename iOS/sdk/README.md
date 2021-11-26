@@ -2,5 +2,5 @@
 
 ## 下载地址
 
-[最新的OcrSDKKit.framework下载地址](https://ai-sdk-release-1254418846.cos.ap-guangzhou.myqcloud.com/ocr/1.0.8/sdk/OCR_iOS_SDK_v1.0.8.zip)
+[最新的OcrSDKKit.framework下载地址](https://ai-sdk-release-1254418846.cos.ap-guangzhou.myqcloud.com/ocr/1.0.9/sdk/OCR_iOS_SDK_v1.0.9.zip)
 
