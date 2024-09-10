@@ -1,6 +1,0 @@
-{
-  "component": true,
-  "usingComponents": {
-    "seal-loading": "../loading/index"
-  }
-}

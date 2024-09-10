@@ -1,1 +1,0 @@
-<seal-picker mode="{{mode}}" range="{{innerRange}}" value="{{innerValue}}" bind:confirm="_handleConfirm" bind:cancel="_handleCancel" bind:change="_handleChange"></seal-picker>
